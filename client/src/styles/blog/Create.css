@@ -1,0 +1,56 @@
+.blogPreview {
+    min-height: 500px;
+    width: 100%;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.title {
+    border-color: black;
+    border-style: solid;
+
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+
+}
+
+.markdown {
+    display: inline-block;
+    border-color: black;
+    border-style: solid;
+    color: black;
+    min-height: inherit;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    white-space: pre-wrap;
+}
+
+.markdownPreview {
+    display: inline-block;
+    min-height: inherit;
+    width: 50%;
+    right: 0;
+
+    position: absolute;
+    white-space: pre-wrap;
+}
+
+.markdownPreview>* {
+    padding: 0;
+    margin: 0;
+}
+
+[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    display: block;
+    color: #aaa;
+  }

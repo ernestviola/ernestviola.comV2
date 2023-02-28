@@ -1,0 +1,21 @@
+/* Page Styling */
+
+.root {
+  min-height: 100% !important;
+}
+
+.page {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 768px) {
+  .page {
+    transform: 2s;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  } 
+
+}

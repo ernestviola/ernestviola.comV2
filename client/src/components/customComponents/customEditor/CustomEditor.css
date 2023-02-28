@@ -1,0 +1,37 @@
+.DraftEditor-root {
+  margin-bottom: 20px;
+} 
+
+div.DraftEditor-root {
+  /* border: 1px solid #000;
+  background-color: beige; */
+  min-height: 500px;
+  width: 100%;
+  /* overflow-y: auto; */
+}
+
+div.notranslate {
+  border: 1px solid #000;
+  background-color: beige;
+}
+
+div.DraftEditor-editorContainer,
+div.public-DraftEditor-content {
+  min-height: inherit;
+}
+/* 
+button {
+  background: #999;
+  color: #fff;
+  border: none;
+  padding: .5em;
+  cursor: pointer;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  border-radius: .2em;
+}
+
+button:hover {
+  background: #888;
+}
+ */
