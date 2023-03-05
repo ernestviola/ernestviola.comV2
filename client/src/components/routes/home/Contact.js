@@ -7,6 +7,26 @@ const Contact = () => {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
 
+    const sendEmail = async (e) => {
+        e.preventDefault()
+
+        const response = await fetch('https://f7am2j1dof.execute-api.us-east-1.amazonaws.com/production', {
+            method: 'POST',
+            mode: 'cors',
+            headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json;charset=UTF-8",
+              },
+
+            body: JSON.stringify(
+                {"body":{"name":name,"email":email,"message":message}}
+            
+
+            )
+        })
+        console.log(response)
+    }
+
 
     return (
         <form className='formGroup'>
@@ -21,7 +41,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className='submitSection'>
-                <input className='submit' type='submit' value='Send' />
+                <button className='submit' type='submit' onClick={sendEmail}>Send</button>
             </div>
 
         </form>
